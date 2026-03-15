@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sparkle Clean | Instant Quote</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+
+     <div class="container">
+
+        <header>
+                 <h1>Sparkle Clean Services</h1>
+                 <p>Get an instant estimate for your home cleaning</p>
+         </header>
+
+         <form id="quote-form">
+            
+          <div class="form-group">
+               <label for="rooms">Number of Rooms</label>
+               <input type="number" id="rooms" value="1" min="1">
+          </div>
+
+          <div class="form-group">
+               <label for="service-type">Service Type</label>
+               <select id="service-type">
+                     <option value="standard">Standard Clean ($50/room)</option>
+                     <option value="deep">Deep Clean ($80/room)</option>
+                     <option value="move">Move In/Out ($100/room)</option>
+
+               </select>
+          </div>
+           
+          <div class="form-group">
+                <label>Extras</label>
+                  <div class="checkbox-group">
+               <label>
+                    <input type="checkbox" class="extra" value="20">Windows ($20)
+               </label>
+               <label>
+                      <input type="checkbox" class="extra" value="30"> Carpets ($30)
+               </label>  
+                </div>
+          </div>
+
+          <div class="total-section">
+
+                <span>Estimated Total</span>
+                <strong id="total-price">$0</strong>
+          </div>
+            
+          <button type="submit">Book This Price</button>
+         </form>
+     </div>
+
+   
+<script src="script.js"></script>
+</body>
+
+</html> 
